@@ -1,0 +1,19 @@
+body {
+  background: lightblue;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-style: solid;
+  border-color: blue;
+  border-width: 16px 16px 2px 2px;
+  width: 300px;
+  height: 450px;
+  padding: 20px;
+}
+
+.article-heading {
+  font-size: 32px;
+}
