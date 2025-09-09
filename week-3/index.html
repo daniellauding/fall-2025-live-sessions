@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Tuesday Forms</title>
+</head>
+<body>
+  <h1>Movie tickets</h1>
+
+  <form
+    action="http://httpbin.org/anything" method="POST"
+  >
+    <div class="form-input">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="example@email.com"
+      />
+    </div>
+    <div class="form-input">
+      <label for="movie">Choose a movie</label>
+      <select
+        name="movie"
+        id="movie">
+        <option value="Paddington in Peru">Paddington in Peru</option>
+        <option value="Batman">Batman</option>
+        <option value="Thor">Thor</option>
+      </select>
+    </div>
+    <div class="form-input">
+      <label for="amount">Number of tickets</label>
+      <input
+        type="number"
+        name="amount"
+        id="amount"
+      />
+    </div>
+    <button type="submit">To checkout</button>
+  </form>
+</body>
+</html>
