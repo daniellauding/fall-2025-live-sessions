@@ -1,4 +1,49 @@
 body {
   background: #131313;
   color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-weight: 400;
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input, select {
+  background: #202226;
+  color: white;
+  padding: 15px 10px;
+  border: 1px solid #353A42;
+  border-radius: 6px;
+  font-family: "Montserrat";
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: white;
+}
+
+button {
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+  font-family: "Montserrat";
+  font-size: 16px;
 }
