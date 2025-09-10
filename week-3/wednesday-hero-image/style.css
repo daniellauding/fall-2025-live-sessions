@@ -1,0 +1,20 @@
+body {
+  background: aquamarine;
+  margin: 0;
+}
+
+header {
+  /* background-image: url("./elephants.jpg"); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 255, 0.5)), url("./elephants.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+}
