@@ -61,3 +61,22 @@ const showDogs = (dogsArray) => {
 }
 
 showDogs(DOGS)
+
+// const showDogs = () => DOGS.map((dog) => {
+//   return `
+//     <div class="card">
+//       <img src=${dog.img} />
+//       <p>${dog.name}</p>
+//       <p>${dog.fur}</p>
+//       <p>${dog.puppy}</p>
+//     </div>
+//   `
+// });
+
+// console.log(showDogs);
+
+showDogs(DOGS.filter(dog => dog.name === 'Cecilia'));
+
+// container.innerHTML = showDogs(DOGS);
+
+// console.log(showDogs(DOGS));
