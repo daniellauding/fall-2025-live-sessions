@@ -3,7 +3,7 @@ const DOGS = [
     name: 'Alfons',
     img: 'assets/dog1.jpg',
     fur: 'Brown',
-    puppy: false
+    puppy: false,
   },
   {
     name: 'Bingo',
@@ -42,3 +42,22 @@ const DOGS = [
     puppy: false,
   }
 ]
+
+const container = document.getElementById('container')
+
+const showDogs = (dogsArray) => {
+  container.innerHTML = '' // resetting the container before filling it
+
+  dogsArray.forEach(dog => {
+    container.innerHTML += `
+      <div class="card">
+        <p>${dog.name}</p>
+        <img src=${dog.img} alt=${dog.name} />
+        <p>${dog.fur}</p>
+        <p>${dog.puppy ? '🐶' : '🐕'}</p>
+      </div>
+    `
+  })
+}
+
+showDogs(DOGS)
